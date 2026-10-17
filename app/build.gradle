@@ -1,33 +1,17 @@
-plugins {
-    id 'com.android.application'
-}
-
+plugins { id 'com.android.application' }
 android {
-    namespace 'com.studio.AppFactory'
-    compileSdk 34
-
-    defaultConfig {
-        applicationId "com.studio.AppFactory"
-        minSdk 23
-        targetSdk 34
-        versionCode 2
-        versionName "2.0.0"
-    }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-            signingConfig signingConfigs.debug
-        }
-        debug {
-            debuggable true
-        }
-    }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
+  namespace 'com.studio.proapp'
+  compileSdk 34
+  defaultConfig {
+    applicationId "com.studio.proapp"
+    minSdk 23
+    targetSdk 34
+    versionCode 1
+    versionName "1.0.0"
+  }
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+  }
 }
-
-dependencies {
-}
+dependencies {}
